@@ -685,7 +685,7 @@
                             </div>
                         </div>
                     </div>
-                    <form action="contact" class="contact__form grid" method="POST" data-netlify="true">
+                    <form action="contact" class="contact__form grid" id="contactForm" method="POST" data-netlify="true">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nama</label>
@@ -700,10 +700,10 @@
                                 <textarea cols="0" name="pesan" rows="7" class="contact__input" required></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="button button--flex">
+                                <a href="#" onclick="document.getElementById('contactForm').submit(); return false;" class="button button--flex">
                                     Kirim Pesan
                                     <i class="uil uil-message button__icon"></i>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </form>
